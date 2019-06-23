@@ -1,4 +1,4 @@
-# Homepage Server
+# Vagrant Windows 10 Development Environment
 
 ## Getting started
 
