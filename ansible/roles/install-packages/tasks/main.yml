@@ -13,5 +13,5 @@
 
 - name: Create a shortcut for Cmder on the desktop
   win_shortcut:
-    src: C:\tools\Cmder\Cmder.exe
+    src: C:\tools\cmdermini\Cmder.exe
     dest: Desktop\Cmder.lnk
