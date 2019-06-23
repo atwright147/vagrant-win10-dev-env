@@ -1,0 +1,17 @@
+- name: Install chocolatey packages
+  win_chocolatey:
+    name:
+    - procexp
+    - putty
+    - git
+    - vscode
+    - sourcetree
+    - cmdermini
+    - nodejs-lts
+    - nvm
+    state: present
+
+- name: Create a shortcut for Cmder on the desktop
+  win_shortcut:
+    src: C:\tools\Cmder\Cmder.exe
+    dest: Desktop\Cmder.lnk

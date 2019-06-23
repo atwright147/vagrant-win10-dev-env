@@ -1,0 +1,4 @@
+# All roles required in this file will install to ./ansible/required-roles
+
+# Required sources should look like
+# - src: geerlingguy.nodejs

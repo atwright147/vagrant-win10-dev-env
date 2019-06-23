@@ -1,0 +1,5 @@
+/.vagrant/
+
+/ansible/required-roles/
+playbook.retry
+authorized_keys
