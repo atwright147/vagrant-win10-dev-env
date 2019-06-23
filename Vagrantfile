@@ -1,6 +1,7 @@
 Vagrant.require_version ">= 1.7"
 
 PROJECT_NAME = "win10"
+ONE_GIGABYTE = 1024
 
 # Workaround for macOS issue (https://github.com/ansible/ansible/issues/32499#issuecomment-401191857)
 ENV["VAGRANT_OLD_ENV_OBJC_DISABLE_INITIALIZE_FORK_SAFETY"] = "YES"
@@ -8,7 +9,7 @@ ENV["VAGRANT_OLD_ENV_OBJC_DISABLE_INITIALIZE_FORK_SAFETY"] = "YES"
 Vagrant.configure("2") do |config|
     config.vm.provider "virtualbox" do |v|
         v.name = PROJECT_NAME
-        v.memory = 2048
+        v.memory = ONE_GIGABYTE * 2
         v.cpus = 2
         v.gui = true
     end
