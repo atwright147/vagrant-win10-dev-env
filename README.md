@@ -14,22 +14,33 @@
     vagrant up
     ```
 
-### Viewing the DB structure and content
+### Ansible
 
 Ansible is used to provision your Windows box, so please ensure that Ansible is installed on your host machine.
+
+#### Python
+
+I would recommend installing Python3 via brew, so that you are not using macOS's built-in version.
+
+```sh
+brew install python  # python3 seems to have been rename to python in brew now 
+```
 
 #### Install Ansible
 
 ```sh
-sudo pip install ansible
+sudo pip3 install ansible
+
+# or to update ansible
+sudo pip3 install ansible --upgrade
 ```
 
-#### Update Ansible
+#### Ansible dependencies
+
+Ansible uses WinRM to communicate with the Windows Box, so you will need to install the Python WinRM library
 
 ```sh
-sudo pip install ansible --upgrade
+pip3 install pywinrm
 ```
 
 ## Notes
-
-
