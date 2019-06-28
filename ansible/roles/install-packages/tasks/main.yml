@@ -9,6 +9,7 @@
     - cmdermini
     - nodejs-lts
     - nvm
+    - yarn
     state: present
 
 - name: Create a shortcut for Cmder on the desktop
